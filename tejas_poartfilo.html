@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* About Section */
+#about {
+    background-color: #090909;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h1 {
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.project p {
+    margin-top: 10px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #0e0e0e;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: rgb(248, 247, 247);
+    padding: 20px 0;
+    text-align: center;
+}
+
+ul{
+    list-style-type:none;
+    background-color:black;
+    color:white;
+}
+
+ul li{
+    display:inline-block;
+    
+}
+ul li:hover{
+    background-color: green;
+    color:white;
+}
+
+.dropdown{
+    display:none;
+}
+
+ul li:hover .dropdown{
+    display:block;
+    position:absolute; 
+    margin-left:21.5cm;  
+    margin-top:0.001cm;
+}
+.dropdown ul{
+    margin:0.001cm;
+    padding:0;
+}
+
+.dropdown ul li{
+    display:block;
+}
+
+p.one {
+  word-spacing: 20px;
+}
+
+#sport {
+    padding: 50px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sport-re {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.sport {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.sport img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sport h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.sport p {
+    margin-top: 10px;
+}
+
+body {
+    background-color: #0a0a0a;
+    color:white
+}
+
+.you-tube{
+    display:block;
+    position:absolute; 
+    margin-left:21.5cm;  
+    margin-top:0.001cm;
+}
+#acadamic{
+    text-align: center; 
+    width: 200;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#more_aboutme"> More About Me</a>
+                    <div class="dropdown">
+                        <ul>
+                           <li><a href="#acadamic">Acadimic</a></li>
+                           <li><a href="#sport">Sport</a></li>
+                           <li><a href="#teaching">Teaching</a></li>
+                        </ul>
+                    </div>
+                    
+                <li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h1>WELCOME TO PORTFOLIO</h1>
+            <h3>Hi, I'm Tejas Gopal Jaju</h3>
+            <p>I have a strong enthusiasm for learning programming languages such as Python, C, Java, and C++. Currently, 
+                I have mastered the C language and am in the process of learning Python while also pursuing a Cisco networking
+                 certification. I enjoy developing web applications and brainstorming innovative ideas.
+
+            </p>
+            <p>
+               
+            In addition to my programming interests, I am an avid cricket player and fan. I appreciate engaging with others
+            about business and financial topics, as well as exchanging valuable insights. Furthermore, I have a passion for
+            teaching and generating new ideas for business ventures.
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects and Certificate</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="C:\Users\tejas\OneDrive\Pictures\Screenshots\Screenshot 2025-03-26 000259.png" alt="Project 1">
+                    <h3>PORTFOLIO</h3>
+                    <p>My initial project is titled "Portfolio," which I created at CT Lab. While working on this project, 
+                        I experienced a great sense of happiness and took the opportunity to learn and explore various tags on Google. </p>
+                </div>
+                <div class="project">
+                    <img src="C:\Users\tejas\OneDrive\Pictures\Screenshots\Screenshot 2025-03-25 182347.png" alt="Project 2">
+                    <h5>Certificate</h5>
+                    <h3>Introduction to Digital Marketing</h3>
+
+                    <p>The certification done post HSC examination during vacation period</p>
+                </div>
+                <div class="project">
+                    <img src="C:\Users\tejas\OneDrive\Pictures\Screenshots\Screenshot 2025-03-25 184150.png" alt="Project 3">
+                    <h5>Certificate</h5>
+                    <h3>HTML</h3>
+                    <p>The certification done post HSC examination during vacation period</p>
+                </div>
+            </div>
+        </div>
+   <!--more aboutme-->
+    <section id="more_aboutme">
+        <div class="container">
+            
+
+            
+        </div>
+
+    </section>
+    <br><br>
+
+    <!--acadimic-->
+    <section id="Acadamic">
+       <center> <h1>Acadamic</h1></center>
+        <div class="containeer">
+            <div class="projects-grid">
+             
+                <div class="project">
+                    <table border="border-box">
+                    <caption>Primary and Secondary School</caption>
+
+                    <tr>
+                        <th>Class</th>
+                         <th>School</th>
+                         <th>Place</th>
+                        <th>MArks</th>
+                    </tr>
+                    <tr>
+                        <td>1st to 3rd</td>
+                         <td>shri Mahesh Vidyalaya</td>
+                        <td>Shirur Tajband , Latur</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>4th - 10th</td>
+                        <td>Kilbil National School</td>
+                        <td>Ahmedpur, Latur</td>
+                        <td>ssc- 84.00</td>
+                    </tr>
+                    </table>
+                </div>
+                
+
+            <!--second table-->
+                
+                <div class="project">
+                    <table border="border-box">
+
+                   <caption>Higher Secondary School</caption>
+                    <tr>
+                        <th>Class</th>
+                        <th>School Name</th>
+                        <th>Marks</th>
+                     </tr>
+                     <tr>
+                         <td>11th</td>
+                         <td>Sri Chaitanya </td>
+                         <td>70</td>
+                    </tr>
+                     <tr>
+                        <td>12th</td>
+                        <td>Sri Chaitanya </td>
+                        <td>68</td>
+                    </tr>
+                    <td>Entrance Exam</td>
+                        <tr>
+                            <th>Exam Name</th>
+                            <th>Centre of Exam</th>
+                            <th>marks</th>
+                        </tr>
+                        <tr>
+                             <td>JEE-Mains</td>
+                             <td>Pune</td>
+                            <td>79.68</td>
+                        </tr>
+                        <tr>
+                              <td>MHT-CET</td>
+                              <td>Pune</td>
+                             <td>93.45</td>
+                        </tr>
+                    </table>
+                </div>
+            
+            <!--third table-->
+           
+                <div class="project">
+                    <table border="border-box">
+                        <caption>Collage</caption>
+                        <tr>
+                            <th>Semister</th>
+                            <th>Collage</th>
+                            <th>SGPA</th>
+                            <th>CGPA</th>
+                        </tr>
+                        <tr>
+                             <td>Sem-1</td>
+                             <td>MIT-AOE</td>
+                             <td>8.45</td>
+                             <td>8.45</td>
+                        </tr>
+                    </table>
+                </div>
+          
+        
+           
+        </div>
+    </section>
+  <br>
+  <br>
+ 
+    <!-- sport-->
+     <section id="sport">
+        <div class="containeer">
+            <h3><center>Sports</center></h3>
+            <br>
+            <br>
+            <p>I participate in various sports, including karate and cricket. However, from the 
+                5th to the 7th grade, I focused on karate at a professional level. Additionally, 
+                I have images of medals, trophies, and certificates.
+                
+            </p>
+            <div class="sport-re">
+                <div class="sport">
+                    
+                    <img src="C:\Users\tejas\OneDrive\Pictures\Screenshots\Screenshot 2025-03-25 225437.png" alt="project 2">
+
+                </div>
+                <div class="sport">
+                    
+                    <img src="C:\Users\tejas\OneDrive\Pictures\Screenshots\Screenshot 2025-03-25 230102.png" alt="project 2">
+                    
+                </div>
+                <div class="sport">
+                    
+                    <img src="C:\Users\tejas\OneDrive\Pictures\Screenshots\Screenshot 2025-03-25 230327.png" alt="project 2">
+                    
+                </div>
+
+            </div>
+        </div>
+
+     </section>
+
+     <!--teaching-->
+     <section>
+        <div class="containeer">
+            <h1><center>Teaching</center></h1>
+            <br><center>
+            <p><b>
+                I have a passion for teaching, which is why I created a YouTube channel. I focus on teaching mathematics for 12th-grade students.<br>
+                <i>click below image.</i>
+                
+            </b></p></center>
+            <center><a href="https://www.youtube.com/channel/UCcHugJhWIqtbanEGWn-Nvgw" >
+              <img src="C:\Users\tejas\OneDrive\Pictures\Screenshots\Screenshot 2025-03-25 232850.png" width="500" height="500">
+                </a></center> 
+
+        </div>   
+     </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"  placeholder="Tejas Gopal Jaju">
+
+                <label for="number">number:</label>
+                <input type="number" id="email" name="email"  placeholder="9975840396">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  placeholder="tejasjaju18@gmail.com">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Belive in god every thing is possible"></textarea>
+
+                <button type="Thinks">Thank you </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Tejas Jaju]. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
